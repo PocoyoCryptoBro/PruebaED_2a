@@ -1,12 +1,16 @@
+
+
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CursoTest {
+public class CursoTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getNombre() {
         Curso curso = new Curso("Programacion");
         assertEquals("Programacion", curso.getNombre());
     }
+
     @Test
     void testToString() {
         Curso curso = new Curso("Programacion");
@@ -19,6 +23,7 @@ class CursoTest {
         assertTrue(resultado.contains("Programacion"));
         assertTrue(resultado.contains("Juan"));
     }
+
     @Test
     void aniadirAlumno() {
         Curso curso = new Curso("Programacion");

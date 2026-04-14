@@ -25,4 +25,11 @@ class PersonaTest {
 
         assertTrue(p1.compareTo(p2) < 0);
     }
+
+    @Test
+    void toStringTest() {
+        Persona p = new Persona(12345678, "Juan Perez", 'H', 1, 1, 2000);
+        String texto = p.toString();
+        assertTrue(texto.contains("Juan"));
+    }
 }

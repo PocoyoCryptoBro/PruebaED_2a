@@ -7,9 +7,12 @@ package instituto;
 import java.util.TreeSet;
 
 /**
+ * Clase Curso que gestiona una lista de alumnos.
  *
- * @author ProfDiurno
+ * @author Eric
+ * @version 1.0
  */
+
 public class Curso {
 
     private String nombre;
@@ -34,6 +37,8 @@ public class Curso {
         }
         return s;
     }
+
+
 
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);

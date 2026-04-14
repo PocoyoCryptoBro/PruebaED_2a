@@ -8,6 +8,13 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Objects;
 
+/**
+ * Clase Persona que representa a un alumno con sus datos personales.
+ *
+ * @author Eric
+ * @version 1.0
+ */
+
 public class Persona implements Comparable<Persona> {
 
     private Nif nif;

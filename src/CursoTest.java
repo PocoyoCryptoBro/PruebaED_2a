@@ -19,4 +19,15 @@ class CursoTest {
         assertTrue(resultado.contains("Programacion"));
         assertTrue(resultado.contains("Juan"));
     }
+    @Test
+    void aniadirAlumno() {
+        Curso curso = new Curso("Programacion");
+        Persona p = new Persona(12345678, "Juan Perez", 'H', 1, 1, 2000);
+
+        curso.aniadirAlumno(p);
+
+        String resultado = curso.toString();
+
+        assertTrue(resultado.contains("Juan"));
+    }
 }
